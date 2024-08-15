@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Urbanist;
+    background-color: white;
+}
+
+.color ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.color li {
+    margin-right: 15px;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #053df7;
+    z-index: 1000;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-shadow: 1px 1px 10px white;
+}
+
+nav .home {
+    text-align: left;
+}
+
+.brand {
+    font-family: Urbanist;
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    margin-right: auto;
+}
+
+.container {
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    background-image: linear-gradient(to bottom , #053df7, #25b2f3);
+}
+
+.column-1 {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.ai-ethic-image {
+    float: left;
+    margin-left: 90px;
+}
+
+.ai-ethic-image img {
+    max-width: 90%;
+    max-height: auto;
+}
+
+p {
+    font-size: 18px;
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+h2{
+    font-size: 45px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+h3{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.content .ul{
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content li {
+    margin-bottom: 20px;
+}
+
+.board{
+    text-align: center;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+.summ-board{
+    font-size: 5px;
+}
+
+.bullets{
+    font-size: 18px;
+    margin-right: 100px;
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+.good{
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 10px;
+}
+
+.encoder-decoder-photo{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.encoder-decoder-photo img{
+    max-width: 800px;
+    max-height: auto;
+}
+
+.vae-work{
+    text-align: center;
+}
+
+.vae-work img{
+    max-width: 700px;
+    max-height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white; 
+    color: grey;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}

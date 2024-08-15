@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GANs</title>
+        <link rel="stylesheet" href="GAN.css">
+    </head>
+
+    <body>
+        <div class="color">
+            <nav>
+                <div class="brand"><a href="file:///C:/Users/Richa%20Chopra/Desktop/generative%20ai/main%20website/index.html">Generative AI</a></div>
+                <ul>
+                    <li class="home"><a href="file:///C:/Users/Richa%20Chopra/Desktop/generative%20ai/main%20website/index.html">Home</a></li>
+                    <div class="links-container">
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\Introduction\Introduction.html">Introduction</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\history page\History1.html">History</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\working page\working.html">Working</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\application page\application.html">Application</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\ethics page\ethics.html">Ethics</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\future page\future.html">Future</a></li>
+                    </div>
+                </ul>
+            </nav>
+        
+            <div class="container">
+                <div class="row">
+                    <div class="column-1">
+                        <h1>Generative Adversarial Networks (GANs)</h1>
+                        <p>At Right is the image of Ian GoodFellow, who created GANs</p>
+                    </div>
+                    <div class="ai-ethic-image"><img src="Ian_Goodfellow-removebg-preview.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ethic-container">
+            <h2>Introduction</h2>
+            <p>Generative Adversarial Networks (GANs) are a type of artificial intelligence that can create new data similar to a given set of data. 
+            They work by using two neural networks that compete against each other: a generator and a discriminator.</p>
+            <ul class="content">
+                <li><h3>Generator</h3>
+                    <p>This network creates new data samples from random noise. Its goal is to produce data that looks real.</p>
+                </li>
+
+                <li><h3>Discriminator</h3>
+                    <p>This network evaluates the data and tries to determine whether it is real (from the actual dataset) or fake (produced by the generator).</p>
+                </li>
+            </ul>
+            <br>
+            <div class="intro-photo">
+            <div class="generator">
+            <img src="generator.jpg"></div>
+            <div class="discriminator">
+            <img src="discriminator.jpg"></div>
+            </div>
+        
+            <h2>The Adversarial Process</h2>
+            <p>The term "adversarial" comes from the competition between the generator and the discriminator. The generator tries to create data 
+            that will fool the discriminator, while the discriminator tries to correctly identify real versus fake data.</p><br>
+            <ul class="content">
+                <li><div class="good">Objective Functions</div><br>
+                    <ul class="bullets">
+                        <li>The discriminator wants to maximize its ability to distinguish real data from fake data. 
+                        It aims to correctly identify all the real data as real and all the fake data as fake.</li>
+                        <li>The generator wants to minimize the discriminator’s ability to tell real data from fake data. 
+                        It aims to produce fake data that the discriminator believes is real.</li>
+                    </ul>
+                </li>
+
+                <li><div class="good">Training Process</div><br>
+                    <ul class="bullets">
+                        <li><b>Initialization</b><br><br>Both the generator and discriminator start with random settings.</li>
+                        <li><b>Training Loop</b><br><br>
+                        <ol class="bullets">
+                            <li>The generator creates a batch of fake data from random noise.</li>
+                            <li>The discriminator evaluates both real data and the fake data.</li>
+                            <li>The discriminator learns to better distinguish real data from fake data.</li>
+                            <li>The generator learns to produce more realistic fake data.</li>
+                            <li>This process repeats, with both networks improving over time.</li>
+                        </ol></li>
+                        <li><b>Backpropagation</b><br><br>
+                            <ul class="bullets">
+                                <li>The discriminator updates its settings to better identify real and fake data.</li>
+                                <li>The generator updates its settings to produce more realistic data that can fool the discriminator.</li>
+                            </ul></li>
+                    </ul>
+                </li></ul>
+            <br>
+            <h2>Challenges in Training GANs</h2>
+            <ul class="content">
+                <li><h3>Non-Convergence</h3>
+                    <p>Sometimes the generator and discriminator don't improve and just keep producing the same results.</p>
+                </li>
+
+                <li><h3>Mode Collapse</h3>
+                    <p>The generator may produce limited and repetitive samples instead of diverse data.</p>
+                </li>
+
+                <li><h3>Vanishing Gradients</h3>
+                    <p>If the discriminator becomes too good, the generator doesn't get enough feedback to improve.</p>
+                </li>
+            </ul>
+            <br><br>
+            
+            <h2>Improvements and Variants</h2>
+            <ul class="content">
+                <li><h3>Wasserstein GANs (WGANs)</h3>
+                    <p>This version improves the stability of training by using a different way to measure differences between real and fake data. 
+                    This helps provide smoother feedback for the generator to improve.
+                    The discriminator (called a critic in this case) is restricted in how much it can change its outputs to keep training stable.</p>
+                </li>
+
+                <li><h3>StyleGAN</h3>
+                    <p>This advanced version of GANs is known for creating high-quality images. 
+                    It allows for more control over the features of the generated images, making them more detailed and realistic.</p>
+                </li>
+            </ul>
+            <br>
+
+            <h2>Applications of GANs</h2>
+            <ul class="content">
+                <li><h3>Image and Video Generation</h3>
+                    <p>Creating realistic photos and videos, including deepfakes.</p>
+                </li>
+
+                <li><h3>Style Transfer</h3>
+                    <p>Changing the style of images, like turning day scenes into night scenes.</p>
+                </li>
+
+                <li><h3>Data Augmentation</h3>
+                    <p>Generating extra data to help train other AI models.</p>
+                </li>
+
+                <li><h3>3D Object Generation</h3>
+                    <p>Designing realistic 3D models for games and virtual environments</p>
+                </li>
+
+                <li><h3>Creative Arts</h3>
+                    <p>Producing music, artwork, and literature.</p>
+                </li>
+
+                <li><h3>Scientific Simulation</h3>
+                    <p>Simulating complex systems and predicting scientific outcomes.</p>
+                </li>
+            </ul>
+            <br><br>
+            <div class="board"><h4>Summary</h4>
+                <div class="sum-board">Generative Adversarial Networks are a major breakthrough in artificial intelligence. 
+                    By having two networks compete, GANs can produce very realistic data. Despite some challenges in training, 
+                    ongoing research is making GANs more stable and useful, opening up new possibilities in many fields.<br> 
+            </div>
+            </div>
+            <br><br>
+            </div>
+        
+            <footer>
+                <div class="footer-left">
+                    <p>Made by Daksh Chopra<br>
+                    B. TECH in CSE(AIML)<br>
+                    Manipal University Jaipur</p>
+                </div>
+            </footer>
+
+        </body>
+            </html>

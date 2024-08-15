@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VAEs</title>
+        <link rel="stylesheet" href="VAE.css">
+    </head>
+
+    <body>
+        <div class="color">
+            <nav>
+                <div class="brand"><a href="file:///C:/Users/Richa%20Chopra/Desktop/generative%20ai/main%20website/index.html">Generative AI</a></div>
+                <ul>
+                    <li class="home"><a href="file:///C:/Users/Richa%20Chopra/Desktop/generative%20ai/main%20website/index.html">Home</a></li>
+                    <div class="links-container">
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\Introduction\Introduction.html">Introduction</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\history page\History1.html">History</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\working page\working.html">Working</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\application page\application.html">Application</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\ethics page\ethics.html">Ethics</a></li>
+                        <li><a href="C:\Users\Richa Chopra\Desktop\generative ai\future page\future.html">Future</a></li>
+                    </div>
+                </ul>
+            </nav>
+        
+            <div class="container">
+                <div class="row">
+                    <div class="column-1">
+                        <h1>Variational Autoencoder (VAE)</h1>
+                        <p>At Right is the image of Diederik P. Kingma and Max Welling, those who created VAEs</p>
+                    </div>
+                    <div class="ai-ethic-image"><img src="VAE_creators-removebg-preview.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ethic-container">
+            <h2>Introduction</h2>
+            <p>A Variational Autoencoder (VAE) is a type of artificial neural network used for generating new data samples similar to the training data. This is known as generative modeling. 
+            VAEs combine the power of traditional autoencoders with probabilistic methods to create a more flexible and powerful model.<br>
+            A VAE consists of two main components: an encoder and a decoder.<br></p>
+            <ul class="content">
+                <li><h3>Encoder</h3>
+                    <p>This network transforms the input data into a lower-dimensional space called the "latent space" or "latent code." 
+                    The encoder outputs parameters (mean and variance) of a Gaussian distribution, which are then used to sample the latent code.</p>
+                </li>
+
+                <li><h3>Decoder</h3>
+                    <p>This network takes the latent code and reconstructs the original data from it. 
+                    The goal is to learn a latent representation that captures the essential features of the data, allowing accurate reconstruction.</p>
+                </li>
+            </ul>
+            <br>
+            <div class="encoder-decoder-photo">
+            <img src="encoder-decoder.jpg"></div>
+    
+        
+            <h2>How VAEs Work</h2>
+            <ul class="content">
+                <li><div class="good">Encoding and Decoding</div><br>
+                    <ul class="bullets">
+                        <li><b>Encoder</b><br><br>The encoder network compresses the input data into a latent space, producing a probability distribution instead of a single point. 
+                        This distribution is characterized by its mean and variance.</li>
+                        <li><b>Sampling</b><br><br> From this distribution, a sample is drawn to create a latent code. 
+                        This sampling introduces randomness into the model, allowing the VAE to generate diverse outputs.</li>
+                        <li><b>Decoder</b><br><br>The decoder network takes this sampled latent code and attempts to reconstruct the original input data.</li>
+
+                    </ul>
+                </li><br>
+                <li><div class="good">Regularization</div><br>
+                    <ul class="bullets">
+                        <li>KL divergence measures the difference between two probability distributions. In VAEs, it ensures that the learned distribution of the latent space is close to a 
+                        standard normal distribution. The formula for KL divergence is:</li>
+                        <li>KL(q(z∣x)∣∣p(z))=E[logq(z∣x)−logp(z)]</li>
+                    </ul>
+                </li></ul>
+                <br>
+                <div class="vae-work">
+                <img src="vae-work.jpg">
+                </div>
+            <br>
+            <h2>Training a VAE</h2>
+            <p>During training, the VAE minimizes a loss function that combines two parts:</p><br>
+            <ul class="content">
+                <li><h3>Reconstruction Loss</h3>
+                    <p>Measures how well the decoder can reconstruct the input data from the latent code.</p>
+                </li>
+
+                <li><h3>KL Divergence</h3>
+                    <p>Measures the difference between the learned latent distribution and the prior distribution.</p>
+                </li>
+            </ul><br>
+            <p>The VAE optimizes both components to learn a meaningful 
+            latent space representation that can accurately reconstruct the data and generate new samples.</p>
+            <br><br>
+
+            <h2>Applications of VAEs</h2>
+            <ul class="content">
+                <li><h3>Data Compression</h3>
+                    <p>Creating realistic photos and videos, including deepfakes.</p>
+                </li>
+
+                <li><h3>Synthetic Data Generation</h3>
+                    <p>Changing the style of images, like turning day scenes into night scenes.</p>
+                </li>
+
+                <li><h3>Image and Video Generation</h3>
+                    <p>Generating extra data to help train other AI models.</p>
+                </li>
+
+                <li><h3>Anomaly Detection</h3>
+                    <p>Designing realistic 3D models for games and virtual environments</p>
+                </li>
+            </ul>
+            <br><br>
+            <div class="board"><h4>Summary</h4>
+                <div class="sum-board">Variational Autoencoders are powerful tools for generative modeling, offering a probabilistic approach to encoding and decoding data. By combining traditional autoencoders with probabilistic methods and regularization, VAEs can generate diverse and realistic new data samples, 
+                making them valuable in various applications from data compression to synthetic data creation.<br> 
+            </div>
+            </div>
+            <br><br>
+            </div>
+            <footer>
+                <div class="footer-left">
+                    <p>Made by Daksh Chopra<br>
+                    B. TECH in CSE(AIML)<br>
+                    Manipal University Jaipur</p>
+                </div>
+            </footer>
+        </body>
+            </html>

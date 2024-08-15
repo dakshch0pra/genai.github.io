@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Urbanist;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-right: 15px;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #053df7;
+    z-index: 1000;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-shadow: 1px 1px 10px white;
+}
+
+nav .home {
+    text-align: left;
+}
+
+.brand {
+    font-family: Urbanist;
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    margin-right: auto;
+}
+
+.container {
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 6%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    background-image: linear-gradient(to bottom , #053df7, #25b2f3);
+}
+
+.column-1 {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.smthg {
+    float: left;
+    margin-left: 90px;
+}
+
+.smthg img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 18px;
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.intro {
+    font-family: Urbanist;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.intro-head {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hi-image {
+    margin-bottom: 10px;
+    margin-top: -20px;
+    margin-left: 20px;
+    width: 20%;
+    height: auto;
+}
+
+.intro-text {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: #2196F3;
+    color: white;
+    margin: 10px 0;
+    position: relative;
+}
+
+.child-nodes {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    position: relative;
+}
+
+.child-node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: #51bdf0;
+    color: white;
+    margin: 10px;
+    position: relative;
+}
+
+.child-node::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.child-nodes::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background-color: #000;
+}
+
+.learn-more {
+    margin-top: 20px;
+    color: rgb(7, 113, 252);
+}
+
+.underline {
+    border-top: 2px solid black;
+    width: 25%;
+    margin: 20px auto;
+    margin-bottom: 20px;
+}
+
+.history {
+    font-family: Urbanist;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.history-head {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.turing-machine-image{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 25%;
+    height: 45%;
+}
+
+.working {
+    font-family: Urbanist;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.working-head {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.working-main-image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 15%;
+    height: 35%;
+}
+
+.application {
+    font-family: Urbanist;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.application-head {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.application-image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 25%;
+    height: 45%;
+}
+
+.ethics {
+    font-family: Urbanist;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ai-ethic-main-image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 15%;
+    height: 35%;
+}
+
+.ethics-head {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.future {
+    font-family: Urbanist;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.future-head {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.future-image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 25%;
+    height: 45%;
+}
+
+.intro-line {
+    width: 25%;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white; 
+    color: grey;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
